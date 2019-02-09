@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caso 1</title>
+    <link rel="stylesheet" href="./utl/caso1.css">
+  </head>
+  <body>
+    <script type="text/javascript" src="./utl/caso1.js"></script>
+    <div class="calc">
+      <input type="text" class="pantalla" id="valor" value="0" readonly="true" />
+      <div class="botones" id="botones">
+        <button type="button" value="7" id="7" onclick="guardarNumero('7')">7</button>
+        <button type="button" value="8" id="8" onclick="guardarNumero('8')">8</button>
+        <button type="button" value="9" id="9" onclick="guardarNumero('9')">9</button>
+
+        <button type="button" value="4" id="4" onclick="guardarNumero('4')">4</button>
+        <button type="button" value="5" id="5" onclick="guardarNumero('5')">5</button>
+        <button type="button" value="6" id="6" onclick="guardarNumero('6')">6</button>
+
+        <button type="button" value="1" id="1" onclick="guardarNumero('1')">1</button>
+        <button type="button" value="2" id="2" onclick="guardarNumero('2')">2</button>
+        <button type="button" value="3" id="3" onclick="guardarNumero('3')">3</button>
+
+        <button type="button" value="0" onclick="guardarNumero('10')">0</button>
+        <button type="button" class="operacion" value="+" id="suma" onclick="operar('+')">+</button>
+        <button type="button" class="operacion" value="-" id="resta" onclick="operar('-')">-</button>
+        <button type="button" class="igual" value="=" id="igual" onclick="resolver()">=</button>
+      </div>
+    </div>
+  </body>
+</html>
